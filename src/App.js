@@ -27,7 +27,7 @@ function App() {
           <h2>My Wizard</h2>
           <p>Health: {myWizard.get("health")}</p>
           <p>Attack strength: {myWizard.get("attackStrength")}</p>
-          <p>Full name: {myWizard.fullName()}</p>
+          <p>Name: {myWizard.getName()}</p>
           <button onClick={() => updateMyWizard(setMyWizard)(myWizard, 'health', 300)}>Update wizard</button>
           <button onClick={() => myWizard.castSpell()}>Cast spell</button>
         </div>
@@ -35,7 +35,7 @@ function App() {
           <h2>My Warrior</h2>
           <p>Health: {myWarrior.get("health")}</p>
           <p>Attack strength: {myWarrior.get("attackStrength")}</p>
-          <p>Full name: {myWarrior.fullName()}</p>
+          <p>Name: {myWarrior.getName()}</p>
           <button onClick={() => myWarrior.block()}>Block attack</button>
         </div>
       </header>
